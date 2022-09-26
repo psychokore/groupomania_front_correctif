@@ -1,0 +1,62 @@
+.postmodule-container {
+    background-color: #FFFF;
+    width: 55%;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+#publication-form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    
+    border-radius: 30px;
+    border: solid black 1px;
+    box-shadow: 5px 5px 13px -2px #C4C4C4;
+    margin: 130px auto;
+    height: 300px;
+    h1{
+        font-size: 1.2em;
+    }
+    
+}
+
+.image-input {
+    cursor: pointer;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: flex-end;
+    .fa-image{
+        font-size: 24px;
+        margin-right: 15px;
+        
+    }
+}
+
+.post-content {
+    height: 30px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: lighten(#C4C4C4, 20%);
+    margin-bottom: 30px;
+    justify-content: first baseline;
+}
+
+.post-button {
+    background-color: lighten(#C4C4C4, 10%);
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    font-size: 1em;
+    height: 50px;
+    width: 130px;
+    align-self: center;
+    cursor: pointer;
+}

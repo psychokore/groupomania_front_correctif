@@ -1,0 +1,201 @@
+.feed-container {
+    background-color: #FFFF;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 800px;
+    overflow: auto;
+    width: 45%;
+    &::-webkit-scrollbar{
+        width: 2px
+    }
+}
+
+.post-container {
+    border-radius: 30px;
+    border: solid black 1px;
+    box-shadow: 5px 5px 13px -2px #C4C4C4;
+    
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.author-container {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.5fr;
+    grid-template-rows: repeat (2, 20px);
+    align-items: center;
+    justify-content: center;
+    h2 {
+        grid-column: 2;
+        grid-row: 1;
+        font-size: 1em;
+        margin-bottom: 0px;
+        margin-left: 5px;
+    } 
+    h3 {
+        grid-column: 2;
+        grid-row: 2;
+        font-size: 0.8em;
+        margin-top: 3px;
+        margin-left: 5px;
+        font-style: italic;
+        color: darken(#C4C4C4, 30%);
+        font-weight: 400;
+    }
+    .fa-circle-user {
+        grid-area: 1 / 1 / 3 /2 ;
+        font-size: 2.5em;
+        padding-left: 5px;
+        padding-top: 2px;
+        justify-self: center;
+    }
+}
+
+
+
+.content-container {
+    margin-top: 10px;
+    .content-text {
+        padding-left: 40px;
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+    .update-container {
+        text-align: right;
+        font-size: 20px;
+        margin-right: 20px;
+        .fa-trash-can{
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .fa-pen-to-square {
+            cursor: pointer;
+        }
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+        display: block;
+    }
+    .delete-container {
+        text-align: right;
+        font-size: 20px;
+        margin-right: 20px;
+        .fa-trash-can{
+            margin-right: 3px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+        .fa-trash-can{
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    }
+
+    .update-post {
+        display: flex;
+        flex-direction: row;
+        margin-left: 30px;
+        background-color: lighten(#C4C4C4, 10%);
+        border-radius: 20px;
+        height: 80px;
+        align-items: center;
+        width: 85%;
+        .update-textarea {
+            border-radius: 20px;
+            border: none;
+            background-color: lighten(#C4C4C4, 20%);
+            width: 80%;
+            height: 50px;
+            padding-left: 20px;
+            padding-top: 5px;
+            font-size: 16px;
+            margin-left: 20px;
+            resize: none;
+        }
+        .button-update {
+            cursor: pointer;
+            height: fit-content;
+            margin-left: 20px;
+            &:hover {
+                background-color: #C4C4C4 
+            }
+            border-radius: 30px ;
+            .fa-circle-right{
+                font-size: 30px;
+                padding-left: 6px;
+                padding-right: 6px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                
+            }
+        }
+    }
+}
+
+.interaction-container {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: space-around;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+
+.like-container {
+    display: flex;
+    height: 20px;
+    .fa-heart {
+        font-size: 20px;
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 20px;  
+    }
+    p {
+        margin-top: 3px;
+        margin-right: 5px;
+    }
+}
+
+.comments-container {
+    display: flex;
+    height: 20px;
+    .fa-comments {
+        font-size: 20px;
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+    p {
+        margin-top: 3px;
+        margin-right: 5px;
+    }
+}
+
+.active {
+    background-color: #C4C4C4; 
+    color: #FFFF;
+}
+
+.show-more-comment{
+    text-align: center;
+    font-size: 0.8em;
+    cursor: pointer;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    &:hover {
+        text-decoration: solid underline;
+    }
+}
+
+.no-more-comment{
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}

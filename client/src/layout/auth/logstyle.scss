@@ -1,0 +1,119 @@
+.log-container {
+    width: 100%;
+    margin-top: 3vw;
+}
+.connection-form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.5);
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border-radius: 30px;
+    position: relative;
+    top: -80px;
+}
+
+.form-container {
+    width: 100%;
+
+}
+
+#sign-in-form {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    label{
+        font-weight:bold;
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 1em;
+    }
+    .textarea {
+        background: #FFFF;
+        height: 30px;
+        border-radius: 15px;
+        border: none;
+        margin-bottom: 20px;
+        font-size: 1em;
+        padding-left: 15px;
+    }
+
+}
+
+.button-container {
+    width: 150px;
+    border-top: 1px darken(#C4C4C4, 30%) solid;
+}
+
+.logbutton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        font-size: 0.9em;
+    }
+    
+}
+
+.button{
+        color: #FFFF;
+        background: #1A2340;
+        border-radius: 10px;
+        margin: auto;
+        width: 130px;
+        height: 40px;
+        margin-bottom: 10px;
+        color: #FFFF;
+        font-size: 1em;
+        border: none;
+    }
+
+
+.img-container {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    width: max-content;
+    
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+.error {
+    color: red;
+}
+#sign-up-form {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    label{
+        font-weight:bold;
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 1em;
+    }
+    .textarea {
+        background: #FFFF;
+        height: 30px;
+        border-radius: 15px;
+        border: none;
+        margin-bottom: 20px;
+        font-size: 1em;
+        padding-left: 15px;
+    }
+
+}
